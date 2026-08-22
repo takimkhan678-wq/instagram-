@@ -1,0 +1,68 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-box {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.instagram-logo {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.instagram-logo h1 {
+  font-size: 56px;
+  font-weight: 300;
+  color: #000;
+  font-family: 'Brush Script MT', cursive;
+  letter-spacing: 1.5px;
+}
+
+.signup-box {
+  background: white;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  padding: 15px;
+  border-radius: 1px;
+}
+
+.signup-box p {
+  color: #262626;
+  font-size: 14px;
+}
+
+.signup-box a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup-box a:hover {
+  color: #00a8ff;
+}
+
+@media (max-width: 480px) {
+  .login-wrapper {
+    max-width: 100%;
+  }
+
+  .instagram-logo h1 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,122 @@
+.navbar {
+  background: white;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.navbar-logo h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  white-space: nowrap;
+}
+
+.navbar-search {
+  flex: 1;
+  max-width: 268px;
+}
+
+.navbar-search input {
+  width: 100%;
+  padding: 8px 16px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.navbar-search input:focus {
+  border-color: #bdbdbd;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.icon-btn:hover {
+  opacity: 0.6;
+}
+
+.user-profile {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 10px;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 8px;
+  background: #f56040;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.logout-btn:hover {
+  background: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .navbar-search {
+    display: none;
+  }
+
+  .navbar-container {
+    gap: 10px;
+  }
+
+  .navbar-logo h2 {
+    font-size: 18px;
+  }
+}
